@@ -1,5 +1,29 @@
 {
   "dependencies": {
-    "cors": "^2.8.5"
-  }
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.3"
+  },
+  "name": "textutil",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ./client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borradevendar/textutil.git"
+  },
+  "author": "Devendar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/borradevendar/textutil/issues"
+  },
+  "homepage": "https://github.com/borradevendar/textutil#readme",
+  "description": ""
 }
